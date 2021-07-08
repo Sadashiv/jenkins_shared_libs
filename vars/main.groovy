@@ -1,3 +1,3 @@
-def message(name) {
+def call(name) {
     echo "Weclome ${name} to shared libs"
 }
