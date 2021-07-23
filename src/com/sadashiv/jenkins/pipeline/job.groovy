@@ -4,7 +4,7 @@ class MyUtilities {
     }
 }
 myobj = new  MyUtilities()
-println myobj.sayHello()
+println "myobj.sayHello()"
 
 
 
