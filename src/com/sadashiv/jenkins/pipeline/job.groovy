@@ -1,12 +1,10 @@
 class MyUtilities {
-    static void addMyFeature(def job) {
-        job.with {
-            description('Arbitrary feature')
-        }
+    def sayHello()  {
+        println "Welcome to groovy"
     }
 }
-def myJob = job('example')
-MyUtilities.addMyFeature(myJob)
+myobj = new  MyUtilities()
+println myobj.sayHello()
 
 
 
