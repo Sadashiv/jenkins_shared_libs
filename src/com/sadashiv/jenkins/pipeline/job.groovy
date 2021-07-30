@@ -1,23 +1,22 @@
-class MyUtilities {
+/*class MyUtilities {
     def sayHello()  {
         println "Welcome to groovy"
     }
 }
 myobj = new  MyUtilities()
 println "myobj.sayHello()"
+*/
 
 
-
-/*timeStamps {
+timeStamps {
     ansiColor('xterm') {
-        node('master') {
-            stage('Start Stage') {
+        node(label: 'master') {
+            stage(name: 'Start Stage') {
                 sh "echo 'Hello World'"
                 library identifier: "shared_libs@master"
-                sh "echo 'Load library'"
+                echo 'Load library'
             }
         }
     }
 
 }
-*/
