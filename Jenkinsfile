@@ -1,5 +1,5 @@
 @Library('shared_libs@master')_
-import com.sadashiv.jenkins.pipeline.SadasGroovy
+import com.sadashiv.jenkins.pipeline.SadaGroovy
 
 node {
     pipeline = new SadaGroovy(this)
