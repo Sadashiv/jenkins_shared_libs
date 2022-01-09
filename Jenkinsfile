@@ -1,5 +1,11 @@
-@Library('shared_libs') _
+@Library('shared_libs@master')_
+import com.sada.jenkins.pipeline
+node {
+    pipeline = new SadaGroovy(this)
+    pipeline.addFlow()
+}
 
+/**
 package com.sadashiv.jenkins.pipeline.sada.*
 
 pipeline {
@@ -40,4 +46,4 @@ pipeline {
             }
     }
 }
-
+**/

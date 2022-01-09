@@ -1,15 +1,21 @@
-package com.sadashiv.jenkins.pipeline;
+package com.sadashiv.jenkins.pipeline
 
-//class SadaGroovy {
-//   static void main(String[] args){
+class SadaGroovy {
 
-    def testFunc (){
-        //echo "HELLO FROM testFunc from class SadaGroovy"
-        System.out.println("Welcome to groovy class SadaGroovy")
+    SadaGroovy(script) {
+        this.script = script
     }
-//    return this;
-//}
-//}
 
-def z = new com.sadashiv.jenkins.pipeline.sada()
-System.out.println(z.testFunc())
+    public void addFlow() {
+        getGradle()
+
+    }
+
+    void getGradle() {
+        script.statge('Build') {
+            script.sh 'git remote -v'
+        }
+    }
+
+}
+
