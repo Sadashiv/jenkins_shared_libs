@@ -2,7 +2,7 @@
 import com.sadashiv.jenkins.pipeline.sada
 
 node {
-    pipeline = new SadaGroovy(this)
+    pipeline = new sada(this)
     pipeline.addFlow()
 }
 
