@@ -1,8 +1,8 @@
 package com.sadashiv.jenkins.pipeline
 
-class SadaGroovy {
+class sada {
 
-    SadaGroovy(script) {
+    sada(script) {
         this.script = script
     }
 
