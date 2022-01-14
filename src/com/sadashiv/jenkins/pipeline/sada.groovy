@@ -1,7 +1,9 @@
 package com.sadashiv.jenkins.pipeline
 
 class sada {
+
     private final script
+
     sada(script) {
         this.script = script
     }
@@ -12,7 +14,7 @@ class sada {
     }
 
     void getGradle() {
-        script.statge('Build') {
+        script.stage('Build') {
             script.sh 'git remote -v'
         }
     }
