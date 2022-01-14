@@ -15,7 +15,7 @@ class sada {
 
     void getGradle() {
         script.stage('Build') {
-            script.sh 'git remote -v'
+            script.echo "Hello World"
         }
     }
 
