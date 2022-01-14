@@ -11,6 +11,7 @@ class sada {
     public void addFlow() {
         getGradle()
         getGitVersion()
+        getBuildNumber()
 
 
     }
@@ -23,6 +24,11 @@ class sada {
     void getGitVersion() {
         script.stage("Git version") {
             script.echo "git --version"
+        }
+    }
+    void getBuildNumber() {
+        script.stage("Build Number") {
+            script.echo "Latest Build Number" + script.env.BUILD_NUMBER
         }
     }
 
