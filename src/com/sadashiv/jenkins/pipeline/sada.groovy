@@ -29,6 +29,7 @@ class sada {
     void getBuildNumber() {
         script.stage("Build Number") {
             script.echo "Latest Build Number" + script.env.BUILD_NUMBER
+            println("Hello World")
         }
     }
 
