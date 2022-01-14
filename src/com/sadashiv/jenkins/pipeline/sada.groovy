@@ -1,7 +1,7 @@
 package com.sadashiv.jenkins.pipeline
 
 class sada {
-
+    private final script
     sada(script) {
         this.script = script
     }
