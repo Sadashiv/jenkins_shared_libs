@@ -10,12 +10,19 @@ class sada {
 
     public void addFlow() {
         getGradle()
+        getGitVersion()
+
 
     }
 
     void getGradle() {
-        script.stage('Build') {
-            script.echo "Hello World"
+        script.stage('Gradle Version') {
+            script.echo "gradle -version"
+        }
+    }
+    void getGitVersion() {
+        script.stage("Git version") {
+            script.echo "git --version"
         }
     }
 
