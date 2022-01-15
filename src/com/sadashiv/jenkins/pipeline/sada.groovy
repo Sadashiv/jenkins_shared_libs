@@ -6,6 +6,8 @@ class sada {
 
     sada(script) {
         this.script = script
+        script.echo "Welcome to " +this
+        script.echo "Welcome to " +this.script
     }
 
     public void addFlow() {
