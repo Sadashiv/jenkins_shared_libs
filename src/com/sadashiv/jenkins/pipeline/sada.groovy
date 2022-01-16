@@ -14,6 +14,7 @@ class sada {
         getGradle()
         getGitVersion()
         getBuildNumber()
+        getCurrentDirectory()
 
 
     }
@@ -32,6 +33,13 @@ class sada {
         script.stage("Build Number") {
             script.echo "Latest Build Number" + script.env.BUILD_NUMBER
             println("Hello World")
+        }
+    }
+
+    void getCurrentDirectory() {
+        script.stage("Get PWD") {
+            String currentDir = new File(".").getAbsolutePath()
+            script.echo "Get working directory " +currentDir
         }
     }
 
