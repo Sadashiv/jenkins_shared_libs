@@ -43,13 +43,13 @@ class sada {
 //            script.sh "./installpy3.sh -s"
 //            def cmd=new CommandShell()
 //            cmd.execute("cd /opt && ls -lrt")
-            def command = "git --version"
+            def command = "ls -lrt"
             def proc = command.execute()
             proc.waitFor()              
 
             script.echo "Process exit code:" +proc.exitValue()
-            println "Std Err: ${proc.err.text}"
-            println "Std Out: ${proc.in.text}"
+            script.echo "Std Err:" +proc.err.text()
+            script.echo "Std Out:" +proc.in.text()
 
         }
     }
