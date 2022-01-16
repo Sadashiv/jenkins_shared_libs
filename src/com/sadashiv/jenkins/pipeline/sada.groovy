@@ -49,7 +49,7 @@ class sada {
 
             script.echo "Process exit code:" +proc.exitValue()
             script.echo "Std Err:" +proc.err.text()
-            script.echo "Std Out:" +proc.in.text()
+//            script.echo "Std Out:" +proc.in.text()
 
         }
     }
