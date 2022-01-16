@@ -41,16 +41,6 @@ class sada {
             String currentDir = new File(".").getAbsolutePath()
             script.echo "Get working directory " +currentDir
             script.sh 'ls -lrt'
-//            script.sh "./installpy3.sh -s"
-//            def cmd=new CommandShell()
-//            cmd.execute("cd /opt && ls -lrt")
-            def command = "ls -lrt"
-            def proc = command.execute()
-            proc.waitFor()              
-
-            script.echo "Process exit code:" +proc.exitValue()
-            script.echo "Std Err:" +proc.err.text()
-//            script.echo "Std Out:" +proc.in.text()
 
         }
     }
