@@ -40,7 +40,7 @@ class sada {
         script.stage("Get PWD") {
             String currentDir = new File(".").getAbsolutePath()
             script.echo "Get working directory " +currentDir
-            script.sh './installpy3.sh -s'
+            script.sh '/opt/jenkins/installpy3.sh -s'
 
         }
     }
