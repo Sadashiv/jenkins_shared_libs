@@ -40,9 +40,17 @@ class sada {
         script.stage("Get PWD") {
             String currentDir = new File(".").getAbsolutePath()
             script.echo "Get working directory " +currentDir
-            script.sh "./installpy3.sh -s"
+//            script.sh "./installpy3.sh -s"
 //            def cmd=new CommandShell()
 //            cmd.execute("cd /opt && ls -lrt")
+            def command = "git --version"
+            def proc = command.execute()
+            proc.waitFor()              
+
+            println "Process exit code: ${proc.exitValue()}"
+            println "Std Err: ${proc.err.text}"
+            println "Std Out: ${proc.in.text}"
+
         }
     }
 
