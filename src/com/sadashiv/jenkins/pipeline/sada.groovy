@@ -1,10 +1,10 @@
 package com.sadashiv.jenkins.pipeline
 
-class sada {
+class Sada {
 
     private final script
 
-    sada(script) {
+    Sada(script) {
         this.script = script
         script.echo "Welcome to " +this
         script.echo "Welcome to " +this.script
@@ -47,3 +47,5 @@ class sada {
 
 }
 
+def s = new Sada()
+s.addFlow()
