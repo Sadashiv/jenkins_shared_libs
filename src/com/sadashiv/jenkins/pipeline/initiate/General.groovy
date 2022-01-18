@@ -4,7 +4,7 @@ import hudson.model.Cause
 
 timestamps {
 
-    ansicolor('xterm') {
+    ansiColor('xterm') {
         def flow
         node('agent1') {
             stage('Initiate') {
