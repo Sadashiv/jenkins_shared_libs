@@ -2,7 +2,6 @@ import com.sadashiv.jenkins.pipeline
 
 class CI {
 
-    private CIparams params
 
     CI(def script) {
         this.script = script
