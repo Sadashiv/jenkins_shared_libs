@@ -1,9 +1,9 @@
 import com.sadashiv.jenkins.pipeline
 
-class CIFlow {
+class CI {
 
 
-    CIFlow(def script) {
+    CI(script) {
         this.script = script
 
     }
