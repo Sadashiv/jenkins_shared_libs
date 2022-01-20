@@ -18,7 +18,7 @@ timestamps {
             stage('Build') {
                 echo "Runnning build"
                 def list = ['Grace','Rob','Emmy']
-                echo assert ('Emmy' in list)
+                echo "assert ('Emmy' in list)"
             }
             String flowName = "com.sadashiv.jenkins.pipeline.CI"
       //     class flowClass = Class.forName(flowName, true, this.class.classLoader)
