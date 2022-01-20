@@ -15,6 +15,9 @@ timestamps {
                     errot("Can't run this jenkins job manually")
                 }*/
             }
+            stage('Build') {
+                echo "Runnning build"
+            }
             String flowName = "com.sadashiv.jenkins.pipeline.CI"
       //     class flowClass = Class.forName(flowName, true, this.class.classLoader)
       //      flow = flowClass.getrConstructor(object.class) newInstance(this)
